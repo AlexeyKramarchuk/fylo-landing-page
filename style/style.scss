@@ -1,0 +1,67 @@
+// sass --watch ./style/style.scss ./style/style.css
+
+$very-dark-blue: hsl(243, 87%, 12%);
+$desaturated-blue: hsl(238, 22%, 44%);
+$bright-blue: hsl(224, 93%, 58%);
+$moderate-cyan: hsl(170, 45%, 43%);
+$light-grayish-blue: hsl(240, 75%, 98%);
+$light-gray: hsl(0, 0%, 75%);
+$white: #fff;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+    background-color: black;
+}
+
+.container {
+    margin: auto;
+    padding: 10px;
+    width: 350px;
+    // height: 100vh;
+    background-color: $white;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        .logo {
+            width: 100px;
+        }
+        .menu {
+            display: flex;
+            gap: 10px;
+            li {
+                list-style-type: none;
+                cursor: pointer;
+            }
+        }
+    }
+    .promo {
+        text-align: center;
+        padding: 20px;
+        &-img {
+            width: 100%;
+            margin-top: 50px;
+            padding: 10px;
+        }
+        &-header {
+            margin-top: 20px;
+            line-height: 1.2;
+        }
+        &-text {
+            margin-top: 20px;
+            line-height: 1.2;
+        }
+    }
+     
+}
+
+
