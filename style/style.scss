@@ -50,18 +50,32 @@ body {
         &-img {
             width: 100%;
             margin-top: 50px;
-            padding: 10px;
         }
-        &-header {
-            margin-top: 20px;
-            line-height: 1.2;
-        }
+        &-header,
         &-text {
             margin-top: 20px;
             line-height: 1.2;
         }
+        &-input,
+        &-btn {
+            margin-top: 20px;
+            width: 90%;
+            height: 30px;
+            border: 1px solid $desaturated-blue;
+            border-radius: 5px;
+
+        }
+        &-input::placeholder {
+            padding: 20px;
+            opacity: 0.4;
+        }
+        &-btn {
+            background-color: $bright-blue;
+            color: $white;
+            border: none;
+            cursor: pointer;
+        }
     }
-     
 }
 
 

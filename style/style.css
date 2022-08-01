@@ -40,15 +40,27 @@ body {
 .container .promo-img {
   width: 100%;
   margin-top: 50px;
-  padding: 10px;
 }
-.container .promo-header {
+.container .promo-header, .container .promo-text {
   margin-top: 20px;
   line-height: 1.2;
 }
-.container .promo-text {
+.container .promo-input, .container .promo-btn {
   margin-top: 20px;
-  line-height: 1.2;
+  width: 90%;
+  height: 30px;
+  border: 1px solid hsl(238deg, 22%, 44%);
+  border-radius: 5px;
+}
+.container .promo-input::placeholder {
+  padding: 20px;
+  opacity: 0.4;
+}
+.container .promo-btn {
+  background-color: hsl(224deg, 93%, 58%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
