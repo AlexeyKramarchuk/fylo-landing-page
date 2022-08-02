@@ -62,5 +62,39 @@ body {
   border: none;
   cursor: pointer;
 }
+.container .promo .row {
+  margin-top: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-bottom: 2px solid hsl(170deg, 45%, 43%);
+}
+.container .promo .card {
+  margin: auto;
+  margin-top: 50px;
+  width: 90%;
+  background-color: #fff;
+}
+.container .subfooter {
+  margin: auto;
+  padding: 20px;
+  background-color: hsl(238deg, 22%, 44%);
+  color: #fff;
+  text-align: center;
+}
+.container .main-footer {
+  background-color: hsl(243deg, 87%, 12%);
+  color: #fff;
+  padding: 20px;
+}
+.container .main-footer .phone {
+  display: flex;
+  gap: 20px;
+}
+.container .main-footer .email {
+  display: flex;
+  gap: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
