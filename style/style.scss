@@ -8,111 +8,168 @@ $light-grayish-blue: hsl(240, 75%, 98%);
 $light-gray: hsl(0, 0%, 75%);
 $white: #fff;
 
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 16px;
-    background-color: black;
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  background-color: black;
 }
 
 .container {
-    margin: auto;
-    padding: 10px;
-    width: 350px;
-    // height: 100vh;
-    background-color: $white;
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  margin: auto;
+  padding: 10px;
+  width: 350px;
+  // height: 100vh;
+  background-color: $white;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    .logo {
+      width: 100px;
+    }
+    .menu {
+      display: flex;
+      gap: 10px;
+      li {
+        list-style-type: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .promo {
+    text-align: center;
+    padding: 20px;
+
+    &-img {
+      width: 100%;
+      margin-top: 50px;
+    }
+    &-header,
+    &-text {
+      margin-top: 20px;
+      line-height: 1.2;
+    }
+    &-input,
+    &-btn {
+      margin: auto;
+      margin-top: 20px;
+      width: 90%;
+      height: 30px;
+      border: 1px solid $desaturated-blue;
+      border-radius: 5px;
+    }
+    &-input::placeholder {
+      padding: 20px;
+      opacity: 0.4;
+    }
+    &-btn {
+      background-color: $bright-blue;
+      color: $white;
+      border: none;
+      cursor: pointer;
+    }
+    .row {
+      margin-top: 20px;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      border-bottom: 2px solid $moderate-cyan;
+    }
+    .card {
+      margin: auto;
+      margin-top: 50px;
+      padding: 10px;
+      width: 90%;
+      background-color: #fff;
+      text-align: left;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      &-text {
         margin-top: 20px;
-        .logo {
-            width: 100px;
+      }
+      &-autor {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        text-align: left;
+        line-height: 1.3;
+        .profil-logo {
+          width: 50px;
+          border-radius: 50%;
         }
-        .menu {
-            display: flex;
-            gap: 10px;
-            li {
-                list-style-type: none;
-                cursor: pointer;
-            }
-        }
+      }
     }
-    .promo {
-        text-align: center;
-        padding: 20px;
-        
-        
-        &-img {
-            width: 100%;
-            margin-top: 50px;
-        }
-        &-header,
-        &-text {
-            margin-top: 20px;
-            line-height: 1.2;
-        }
-        &-input,
-        &-btn {
-            margin-top: 20px;
-            width: 90%;
-            height: 30px;
-            border: 1px solid $desaturated-blue;
-            border-radius: 5px;
-
-        }
-        &-input::placeholder {
-            padding: 20px;
-            opacity: 0.4;
-        }
-        &-btn {
-            background-color: $bright-blue;
-            color: $white;
-            border: none;
-            cursor: pointer;
-        }
-        .row {
-            margin-top: 20px;
-            padding: 5px;
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            border-bottom: 2px solid $moderate-cyan;
-        }
-        .card {
-            margin: auto;
-            margin-top: 50px;
-            padding: 10px;
-            width: 90%;
-            background-color: #fff;
-            text-align: left;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            &-text {
-                margin-top: 20px;
-            }
-            &-autor {
-                margin-top: 20px;
-                display: flex;
-                gap: 20px;
-                text-align: left;
-                line-height: 1.3;
-                .profil-logo {
-                    width: 50px;
-                    border-radius: 50%;
-                }
-            }
-        }
-    }
-
+  }
 }
 
-    
+.footer {
+    margin: auto;
+    padding: 20px;
+    width: 350px;
+    min-height: 300px;
+    text-align: center;
+    line-height: 1.2;
+    background-color: $desaturated-blue;
+    color: $white;
+    &-header {
+        margin: 30px 0;
+    }
+    &-text {
+        margin-top: 20px;
+    }
+    &-input,
+    &-btn {
+      margin: auto;
+      margin-top: 20px;
+      width: 90%;
+      height: 30px;
+      border: 1px solid $desaturated-blue;
+      border-radius: 5px;
+    }
+    &-input::placeholder {
+      padding: 20px;
+      opacity: 0.4;
+    }
+    &-btn {
+      background-color: $bright-blue;
+      color: $white;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+}
 
+.footer-two {
+    margin: auto;
+    padding: 20px;
+    width: 350px;
+    background-color: $very-dark-blue;
+    color: $white;
+    .footer-logo {
+        margin-top: 20px;
+    }
+    .phone,
+    .email {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .footer-menu {
+        margin-top: 30px;
+        line-height: 2;
+        list-style-type: none;
+        cursor: pointer;
+    }
+    .logos {
+        width: 70%;
+    }
+}
 
