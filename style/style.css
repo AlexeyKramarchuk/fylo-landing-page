@@ -7,7 +7,6 @@
 body {
   font-family: "League Spartan", sans-serif;
   font-size: 16px;
-  background-color: red;
 }
 
 .container {
@@ -26,26 +25,34 @@ body {
   width: 100px;
 }
 .container .header .menu {
-  display: flex;
-  gap: 10px;
-}
-.container .header .menu li {
-  list-style-type: none;
-  cursor: pointer;
-}
-.container .promo {
-  text-align: center;
   padding: 20px;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
 }
-.container .promo-img {
+.container .header .menu_link {
+  color: hsl(243deg, 87%, 12%);
+  text-decoration: none;
+}
+.container .promo-img,
+.container .content-img {
   width: 100%;
   margin-top: 50px;
 }
-.container .promo-header, .container .promo-text {
+.container .promo,
+.container .content {
+  text-align: center;
+  padding: 20px;
+}
+.container .promo-header, .container .promo-text,
+.container .content-header,
+.container .content-text {
   margin-top: 20px;
   line-height: 1.2;
 }
-.container .promo-input, .container .promo-btn {
+.container .promo-input, .container .promo-btn,
+.container .content-input,
+.container .content-btn {
   margin: auto;
   margin-top: 20px;
   width: 90%;
@@ -53,17 +60,20 @@ body {
   border: 1px solid hsl(238deg, 22%, 44%);
   border-radius: 5px;
 }
-.container .promo-input::placeholder {
+.container .promo-input::placeholder,
+.container .content-input::placeholder {
   padding: 20px;
   opacity: 0.4;
 }
-.container .promo-btn {
+.container .promo-btn,
+.container .content-btn {
   background-color: hsl(224deg, 93%, 58%);
   color: #fff;
   border: none;
   cursor: pointer;
 }
-.container .promo .row {
+.container .promo .row,
+.container .content .row {
   margin-top: 20px;
   padding: 5px;
   display: flex;
@@ -71,7 +81,8 @@ body {
   gap: 10px;
   border-bottom: 2px solid hsl(170deg, 45%, 43%);
 }
-.container .promo .card {
+.container .promo .card,
+.container .content .card {
   margin: auto;
   margin-top: 50px;
   padding: 10px;
@@ -81,17 +92,20 @@ body {
   border: 1px solid #ddd;
   border-radius: 8px;
 }
-.container .promo .card-text {
+.container .promo .card-text,
+.container .content .card-text {
   margin-top: 20px;
 }
-.container .promo .card-autor {
+.container .promo .card-autor,
+.container .content .card-autor {
   margin-top: 20px;
   display: flex;
   gap: 20px;
   text-align: left;
   line-height: 1.3;
 }
-.container .promo .card-autor .profil-logo {
+.container .promo .card-autor .profil-logo,
+.container .content .card-autor .profil-logo {
   width: 50px;
   border-radius: 50%;
 }
@@ -156,6 +170,35 @@ body {
 }
 .footer-two .logos {
   width: 70%;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 1440px;
+  }
+  .container .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+  }
+  .container .wrapper .promo-img {
+    width: 70%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .container .wrapper .promo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .container .wrapper .content-img {
+    width: 70%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
