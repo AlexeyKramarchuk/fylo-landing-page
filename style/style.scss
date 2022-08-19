@@ -53,7 +53,9 @@ body {
     text-align: center;
     padding: 20px;
 
-    
+    &-header{
+      font-size: 25px;
+    }
     &-header,
     &-text {
       margin-top: 20px;
@@ -61,9 +63,7 @@ body {
     }
     &-input,
     &-btn {
-      margin: auto;
       margin-top: 20px;
-      width: 90%;
       height: 30px;
       border: 1px solid $desaturated-blue;
       border-radius: 5px;
@@ -114,7 +114,6 @@ body {
 }
 
 .footer {
-  margin: auto;
   padding: 20px;
   width: 410px;
   min-height: 300px;
@@ -219,13 +218,20 @@ body {
     
   }
   .footer {
-   width: 100%;
-   height: 300px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  width: 100%;
+  min-height: 300px;
    &-content {
+    width: 1440px;
     text-align: left;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &-btn {
+      width: 50%;
+    }
    }
   }
 }
