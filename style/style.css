@@ -74,6 +74,12 @@ body {
   border: none;
   cursor: pointer;
 }
+.container .promo .border,
+.container .content .border {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+}
 .container .promo .row,
 .container .content .row {
   margin-top: 20px;
@@ -85,10 +91,9 @@ body {
 }
 .container .promo .card,
 .container .content .card {
-  margin: auto;
-  margin-top: 50px;
+  margin-top: 15px;
   padding: 10px;
-  width: 90%;
+  width: 350px;
   background-color: #fff;
   text-align: left;
   border: 1px solid #ddd;
@@ -113,6 +118,7 @@ body {
 }
 
 .footer {
+  margin: auto;
   padding: 20px;
   width: 410px;
   min-height: 300px;
@@ -173,7 +179,7 @@ body {
   width: 70%;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1440px) {
   .container {
     width: 1440px;
   }
@@ -221,13 +227,14 @@ body {
     min-height: 300px;
   }
   .footer-content {
+    padding: 20px;
     width: 1440px;
     text-align: left;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .footer-content-btn {
+  .footer-content .footer-btn {
     width: 50%;
   }
 }
