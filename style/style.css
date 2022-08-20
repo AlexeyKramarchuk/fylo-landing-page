@@ -54,6 +54,11 @@ body {
   margin-top: 20px;
   line-height: 1.2;
 }
+.container .promo .start,
+.container .content .start {
+  display: flex;
+  flex-direction: column;
+}
 .container .promo-input, .container .promo-btn,
 .container .content-input,
 .container .content-btn {
@@ -175,8 +180,8 @@ body {
   list-style-type: none;
   cursor: pointer;
 }
-.footer-two .logos {
-  width: 70%;
+.footer-two .social-logo {
+  width: 250px;
 }
 
 @media (min-width: 1440px) {
@@ -202,7 +207,9 @@ body {
     grid-row: 1/2;
   }
   .container .wrapper .promo .start {
+    width: 300px;
     display: flex;
+    flex-direction: column;
     gap: 20px;
   }
   .container .wrapper .promo-header, .container .wrapper .promo-text {
